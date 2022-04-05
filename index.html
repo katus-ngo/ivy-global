@@ -53,26 +53,24 @@
 
     <div class="mobile-form" id="mobile-register-form">
         <div class="container">
-            <form>
+            <form method="post" id="register-form-mobile">
                 <div class="row gy-3">
                     <div class="col-12 col-sm-12 col-md-6">
-                        <input placeholder="Họ & tên phụ huynh:" required/>
+                        <input placeholder="Họ & tên phụ huynh:" required id="name-mobile"/>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6">
-                        <input placeholder="Số điện thoại:" required/>
+                        <input placeholder="Số điện thoại:" required id="phone-mobile"/>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6">
-                        <input placeholder="Email:" type="email" required/>
+                        <input placeholder="Email:" type="email" id="email-mobile"/>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6">
-                        <input placeholder="Khu vực:" required/>
+                        <input placeholder="Khu vực:" id="address-mobile"/>
                     </div>
                 </div>
                 <div class="d-flex w-100 justify-content-center mt-4">
-                    <div class="register-button">
-                        <a href="#mobile-register-form">
-                            <img src="images/register.png">
-                        </a>
+                    <div class="register-button" id="mobile-register-button">
+                        <img src="images/register.png">
                     </div>
                 </div>
             </form>
@@ -105,30 +103,28 @@
 <section class="position-relative d-none d-lg-block">
     <div class="container">
         <div class="desktop-form" id="desktop-register-form">
-            <form>
+            <form method="post" id="register-form-desktop">
                 <div class="row">
                     <div class="col-8">
                         <div class="row gy-3">
                             <div class="col-12 col-sm-12 col-md-6">
-                                <input placeholder="Họ & tên phụ huynh:" required/>
+                                <input placeholder="Họ & tên phụ huynh:" required id="name-desktop"/>
                             </div>
                             <div class="col-12 col-sm-12 col-md-6">
-                                <input placeholder="Số điện thoại:" required/>
+                                <input placeholder="Số điện thoại:" required id="phone-desktop"/>
                             </div>
                             <div class="col-12 col-sm-12 col-md-6">
-                                <input placeholder="Email:" type="email" required/>
+                                <input placeholder="Email:" type="email" id="email-desktop"/>
                             </div>
                             <div class="col-12 col-sm-12 col-md-6">
-                                <input placeholder="Khu vực:" required/>
+                                <input placeholder="Khu vực:" id="address-desktop"/>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="d-flex w-100 h-100 align-items-center justify-content-center">
-                            <div class="register-button">
-                                <a href="#desktop-register-form">
-                                    <img src="images/register.png">
-                                </a>
+                            <div class="register-button" id="desktop-register-button">
+                                <img src="images/register.png">
                             </div>
                         </div>
                     </div>
@@ -273,39 +269,45 @@
             <div class="container">
                 <div class="iframe-video justify-content-center d-flex d-sm-none">
                     <!--Change src and keep dimension-->
-                    <iframe width="350" height="175"
-                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                    </iframe>
+                    <iframe width="350" height="175" src="https://www.youtube.com/embed/1DdQIsO5Lho?start=2"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                 </div>
                 <div class="iframe-video justify-content-center d-none d-sm-flex d-md-none">
                     <!--Change src and keep dimension-->
-                    <iframe width="500" height="250"
-                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                    </iframe>
+                    <iframe width="500" height="250" src="https://www.youtube.com/embed/1DdQIsO5Lho?start=2"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                 </div>
                 <div class="iframe-video justify-content-center d-none d-md-flex d-lg-none">
                     <!--Change src and keep dimension-->
-                    <iframe width="624" height="312"
-                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                    </iframe>
+                    <iframe width="624" height="312" src="https://www.youtube.com/embed/1DdQIsO5Lho?start=2"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                 </div>
                 <div class="iframe-video justify-content-center d-none d-lg-flex d-xl-none">
                     <!--Change src and keep dimension-->
-                    <iframe width="824" height="412"
-                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                    </iframe>
+                    <iframe width="824" height="412" src="https://www.youtube.com/embed/1DdQIsO5Lho?start=2"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                 </div>
                 <div class="iframe-video justify-content-center d-none d-xl-flex d-xxl-none">
                     <!--Change src and keep dimension-->
-                    <iframe width="1024" height="512"
-                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                    </iframe>
+                    <iframe width="1024" height="512" src="https://www.youtube.com/embed/1DdQIsO5Lho?start=2"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                 </div>
                 <div class="iframe-video justify-content-center d-none d-xxl-flex">
                     <!--Change src and keep dimension-->
-                    <iframe width="1224" height="612"
-                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                    </iframe>
+                    <iframe width="1224" height="612" src="https://www.youtube.com/embed/1DdQIsO5Lho?start=2"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                 </div>
             </div>
             <img class="video-section-rocket" src="images/rocket.png"/>
@@ -537,7 +539,8 @@
             <div class="mobile-activity-item mt-3">
                 <h3 class="text-white text-center batman-font">DU LỊCH THỰC TẾ ẢO</h3>
                 <p class="text-center">
-                    Du lịch tham quan thực tế ảo để khám phá các kỳ quan thiên nhiên, kiến trúc & văn hóa của các châu lục. trải nghiệm sinh hoạt với người dân bản địa của mỗi quốc gia, học nấu các món truyền thống
+                    Du lịch tham quan thực tế ảo để khám phá các kỳ quan thiên nhiên, kiến trúc & văn hóa của các châu
+                    lục. trải nghiệm sinh hoạt với người dân bản địa của mỗi quốc gia, học nấu các món truyền thống
                 </p>
             </div>
             <div class="mobile-activity-item mt-3">
@@ -588,7 +591,9 @@
                 <div class="desktop-activity-item">
                     <h3 class="text-white text-center batman-font">DU LỊCH THỰC TẾ ẢO</h3>
                     <p class="text-center">
-                        Du lịch tham quan thực tế ảo để khám phá các kỳ quan thiên nhiên, kiến trúc & văn hóa của các châu lục. trải nghiệm sinh hoạt với người dân bản địa của mỗi quốc gia, học nấu các món truyền thống
+                        Du lịch tham quan thực tế ảo để khám phá các kỳ quan thiên nhiên, kiến trúc & văn hóa của các
+                        châu lục. trải nghiệm sinh hoạt với người dân bản địa của mỗi quốc gia, học nấu các món truyền
+                        thống
                     </p>
                 </div>
                 <div class="desktop-activity-item">
@@ -920,13 +925,18 @@
             </div>
             <div class="col-12 col-lg-6 mt-5">
                 <p class="text-center text-white footer-message">
-                    Ivy Global School mang đến cho học sinh và gia đình cơ hội học tập các chương trình giáo dục phổ thông chất lượng cao, với giáo trình được cung cấp từ đối tác Mỹ - Florida Virtual School và Edmentum, đã được kiểm định bởi Cognia - Tổ chức kiểm định chất lượng giáo dục vùng, được Bộ giáo dục Hoa Kỳ công nhận. Các chương trình học được giám sát và giảng dạy bởi đội ngũ giáo viên có bằng cấp và chuyên môn trong lĩnh vực giáo dục.
+                    Ivy Global School mang đến cho học sinh và gia đình cơ hội học tập các chương trình giáo dục phổ
+                    thông chất lượng cao, với giáo trình được cung cấp từ đối tác Mỹ - Florida Virtual School và
+                    Edmentum, đã được kiểm định bởi Cognia - Tổ chức kiểm định chất lượng giáo dục vùng, được Bộ giáo
+                    dục Hoa Kỳ công nhận. Các chương trình học được giám sát và giảng dạy bởi đội ngũ giáo viên có bằng
+                    cấp và chuyên môn trong lĩnh vực giáo dục.
                 </p>
                 <div class="mt-4 d-flex justify-content-center" style="gap: 50px">
                     <a style="width: 50px" href="https://vn.ivyglobalschool.org" target="_blank">
                         <img src="images/earth.png"/>
                     </a>
-                    <a style="width: 50px" href="https://www.youtube.com/channel/UCkhSwJ-ruCnNccm_Tie5kjg" target="_blank">
+                    <a style="width: 50px" href="https://www.youtube.com/channel/UCkhSwJ-ruCnNccm_Tie5kjg"
+                       target="_blank">
                         <img src="images/youtube.png"/>
                     </a>
                     <a style="width: 50px" href="https://www.facebook.com/ivyglobalschoolvietnam" target="_blank">
@@ -937,6 +947,27 @@
         </div>
     </div>
 </section>
+
+<div id="myToastErrorEl" class="myToastEl toast align-items-center text-white bg-danger border-0" role="status"
+     aria-live="polite" aria-atomic="true">
+    <div class="d-flex">
+        <div class="toast-body" id="myToastElErrorMessage">
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+    </div>
+</div>
+
+<div id="myToastSuccessEl" class="myToastEl toast align-items-center text-white bg-success border-0" role="status"
+     aria-live="polite" aria-atomic="true">
+    <div class="d-flex">
+        <div class="toast-body">
+            Đăng ký thành công
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

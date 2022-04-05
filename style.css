@@ -278,6 +278,13 @@ section.footer p.footer-message {
     line-height: 30px;
 }
 
+.myToastEl {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 1000;
+}
+
 @media only screen and (min-width: 576px) {
 
     div.video-section-bg {
