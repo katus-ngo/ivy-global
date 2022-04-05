@@ -4,19 +4,6 @@ const desktopRegisterForm = $('#register-form-desktop')
 const mobileRegisterForm = $('#mobile')
 const desktopRegisterButton = $('#desktop-register-button')
 const mobileRegisterButton = $('#mobile-register-button')
-const myToastElErrorMessage = $('#myToastElErrorMessage')
-
-const toastOption = {
-    animation: true,
-    delay: 2000
-}
-
-const myToastErrorEl  = $('#myToastErrorEl ')
-const myToastError = new bootstrap.Toast(myToastErrorEl, toastOption)
-
-const myToastSuccessEl  = $('#myToastSuccessEl ')
-const myToastSuccess = new bootstrap.Toast(myToastSuccessEl, toastOption)
-
 
 ivyHamburgerIcon.click(function () {
     if (mobileNavbar.hasClass('active')) {
@@ -25,11 +12,6 @@ ivyHamburgerIcon.click(function () {
         mobileNavbar.addClass('active')
     }
 })
-
-function showError (message) {
-    myToastElErrorMessage.html(message)
-    myToastError.show()
-}
 
 function onRegister(name, phone, email, address) {
     const errors = []
@@ -48,7 +30,11 @@ function onRegister(name, phone, email, address) {
     }
 
     if (errors.length > 0) {
-        showError(errors[0])
+        swal({
+            title: "Lỗi",
+            text: errors[0],
+            icon: "warning",
+        })
         return
     }
 
@@ -67,7 +53,11 @@ function onRegister(name, phone, email, address) {
     xhr.open("POST", url, true)
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
-        myToastSuccess.show()
+        swal({
+            title: "Chúc mừng",
+            text: "Bạn đã đăng kí thành công",
+            icon: "success",
+        })
     }
     xhr.send(queryString)
 

@@ -278,16 +278,6 @@ section.footer p.footer-message {
     line-height: 30px;
 }
 
-.myToastEl {
-    position: absolute;
-    top: 70px;
-    right: 10px;
-    z-index: 1;
-}
-
-#mobile-navbar {
-    z-index: 2;
-}
 
 @media only screen and (min-width: 576px) {
 
