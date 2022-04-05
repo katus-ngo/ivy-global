@@ -1,0 +1,651 @@
+/*Mobile first*/
+
+@font-face {
+    font-family: "batman";
+    src: url("fonts/batman.otf");
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+p {
+    margin: unset !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h3 {
+    margin: unset !important;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.batman-font {
+    font-family: 'batman', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+section.mobile-top {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/banner-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+section.mobile-top nav.navbar.active {
+    background-color: #1f1e57;
+}
+
+section.mobile-top nav.navbar a.navbar-brand img.mobile-logo {
+    width: 150px;
+}
+
+section.mobile-top nav.navbar i.ivy-hamburger-icon {
+    font-size: 20px;
+}
+
+section.mobile-top div.mobile-form {
+    position: absolute;
+    max-width: 90%;
+    width: 100%;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+form {
+    background: linear-gradient(92deg, #1D4478 8.8%, #303E7B 98.68%);
+    border: 3px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 24px 16px
+}
+
+input {
+    min-width: 100%;
+    width: 100%;
+    min-height: 38px;
+    height: 100%;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+div.register-button {
+    width: 140px;
+    cursor: pointer;
+}
+
+div.register-button:hover {
+    transform: scale(1.05);
+    transition: all ease-in-out 300ms;
+}
+
+div.register-button img {
+    width: 100%;
+}
+
+.gradient-bg {
+    position: relative;
+    background: linear-gradient(147.07deg, #2E3191 34.39%, #1B1464 76.16%);
+}
+
+section.desktop-overview {
+    padding-top: 150px;
+}
+
+.bg-star:after {
+    /*content: "";*/
+    background-image: url("images/star-bg.png");
+    background-repeat: repeat;
+    background-size: contain;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+div.video-section-bg {
+    background-image: url("images/video-section-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 150px;
+    padding-top: 30px;
+}
+
+img.video-section-rocket {
+    width: 42px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -35px;
+}
+
+section.video-section {
+    padding-bottom: 50px;
+}
+
+section.mobile-value div.carousel-caption {
+    bottom: 0;
+    top: 25%;
+}
+
+section.mobile-value {
+    overflow: hidden;
+}
+
+section.mobile-value h3.value-title {
+    font-size: 20px;
+}
+
+section.mobile-value div.bg-net:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 110%;
+    z-index: 0;
+    background-image: url("images/net-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+}
+
+section.mobile-map img {
+    mix-blend-mode: screen;
+}
+
+section.mobile-map div.mobile-message-block {
+    background: linear-gradient(90deg, #230643 -16.5%, #210C45 0.99%, #17264F 84.83%, #142F53 135.35%, #000000 135.82%);
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    font-size: 12px;
+}
+
+section.mobile-activity div.mobile-activity-item {
+    padding: 12px 44px;
+    border-radius: 26px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 52px;
+}
+
+section.mobile-activity div.mobile-activity-item h3 {
+    font-size: 16px;
+    display: block;
+}
+
+section.mobile-activity div.mobile-activity-item p {
+    color: #135182;
+    font-weight: bold;
+    font-size: 12px;
+    display: none;
+}
+
+section.mobile-activity div.mobile-activity-item:hover {
+    background-color: white;
+}
+
+section.mobile-activity div.mobile-activity-item:hover h3 {
+    display: none;
+}
+
+section.mobile-activity div.mobile-activity-item:hover p {
+    display: block;
+}
+
+section.mobile-journey {
+    background-color: white;
+}
+
+section.mobile-journey div.mobile-journey-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+section.mobile-journey div.mobile-journey-left div.register-button {
+    width: 35%;
+}
+
+section.mobile-journey div.mobile-journey-left div.mobile-journey-image-title {
+    width: 60%;
+}
+
+section.mobile-class-info div.mobile-class-info-list {
+    gap: 10px;
+    margin-top: -80px;
+}
+
+section.mobile-class-info div.mobile-class-info-list div.mobile-class-info-item {
+    width: 40%;
+}
+
+section.mobile-class-info div.mobile-class-info-list div.mobile-class-info-item img {
+    max-width: 30%;
+}
+
+section.mobile-class-info div.mobile-class-info-list div.mobile-class-info-item p {
+    font-size: 12px;
+}
+
+section.mobile-class-info div.mobile-class-info-list div.mobile-class-info-item h3 {
+    font-size: 12px;
+    font-weight: bold;
+}
+section.mobile-products div.mobile-products-list-first {
+    gap: 20px;
+}
+
+section.mobile-products div.mobile-products-list-first div.mobile-products-item{
+    width: 27%;
+}
+
+section.mobile-products div.mobile-products-list-last{
+    gap: 20px;
+}
+
+section.mobile-products div.mobile-products-list-last div.mobile-products-item{
+    width: 22%;
+}
+
+section.footer {
+    background-color: #120224;
+}
+
+section.footer p.footer-message {
+    line-height: 30px;
+}
+
+@media only screen and (min-width: 576px) {
+
+    div.video-section-bg {
+        padding-top: 80px;
+        padding-bottom: 200px;
+    }
+
+    section.mobile-class-info div.mobile-class-info-list {
+        gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    section.mobile-top nav.navbar a.navbar-brand img.mobile-logo {
+        width: 200px;
+    }
+
+    section.mobile-top nav.navbar i.ivy-hamburger-icon {
+        font-size: 30px;
+    }
+
+    img.video-section-rocket {
+        bottom: -25px;
+    }
+
+    section.video-section {
+        padding-bottom: 60px;
+    }
+
+    section.mobile-class-info div.mobile-class-info-list {
+            gap: 30px;
+    }
+
+    section.mobile-class-info div.mobile-class-info-list div.mobile-class-info-item {
+        width: 30%;
+    }
+}
+
+/*Desktop screen >= 992*/
+@media only screen and (min-width: 992px) {
+    section.desktop-top {
+        width: 100%;
+    }
+
+    section.desktop-top img.desktop-banner {
+        width: 100%;
+    }
+
+    section.desktop-top nav.navbar a.navbar-brand img.desktop-logo {
+        width: 200px;
+    }
+
+    section.desktop-top nav.navbar {
+        position: absolute;
+        top: 20px;
+    }
+
+    section.desktop-top nav.navbar a.nav-link:hover {
+        font-weight: bold;
+    }
+
+    input {
+        min-height: 50px;
+    }
+
+    section div.desktop-form {
+        position: absolute;
+        max-width: 80%;
+        width: 100%;
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    section div.desktop-form div.register-button {
+        max-width: 250px;
+        width: 100%;
+    }
+
+    section.desktop-overview p.overview-item-title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    section.desktop-overview p.overview-item-description {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    div.video-section-bg {
+        padding-bottom: 300px;
+    }
+
+    section.desktop-value {
+        overflow: hidden;
+    }
+
+    section.desktop-value h3.value-title {
+        font-size: 20px;
+        position: absolute;
+        top: 35%;
+    }
+
+    section.desktop-value div.bg-net {
+        padding: 150px 0;
+        margin-top: -70px;
+    }
+
+    section.desktop-value div.bg-net:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-image: url("images/net-desktop.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        opacity: 0.3;
+    }
+
+
+    section.desktop-map img {
+        mix-blend-mode: screen;
+    }
+
+    section.desktop-map div.desktop-message-block {
+        background: linear-gradient(90deg, #230643 -16.5%, #210C45 0.99%, #17264F 84.83%, #142F53 135.35%, #000000 135.82%);
+        border: 4px solid white;
+        font-size: 12px;
+        height: 134px;
+        border-radius: 67px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        line-height: 37px;
+    }
+
+    section.desktop-activity {
+        margin-top: 120px;
+        padding-bottom: 100px;
+    }
+
+    section.desktop-activity div.desktop-activity-list {
+        gap: 60px
+    }
+
+    section.desktop-activity div.desktop-activity-list div.desktop-activity-item {
+        position: relative;
+        padding-left: 28%;
+        padding-top: 28%;
+        border: 5px solid white;
+        max-width: 340px;
+        max-height: 340px;
+    }
+
+    section.desktop-activity div.desktop-activity-list div.desktop-activity-item:hover {
+        background-color: white;
+    }
+
+
+    section.desktop-activity div.desktop-activity-item h3 {
+        font-size: 1.5rem;
+        line-height: 37px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 90%;
+    }
+
+    section.desktop-activity div.desktop-activity-item p {
+        color: #135182;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 27px;
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+
+    section.desktop-activity div.desktop-activity-item:hover {
+        background-color: white;
+    }
+
+    section.desktop-activity div.desktop-activity-item:hover h3 {
+        display: none;
+    }
+
+    section.desktop-activity div.desktop-activity-item:hover p {
+        display: block;
+    }
+
+
+    section.desktop-journey {
+        background-color: white;
+    }
+
+    section.desktop-journey div.desktop-journey-left {
+        position: absolute;
+        left: 0;
+        top: 170px;
+        width: 100%;
+    }
+
+    section.desktop-journey div.desktop-journey-left div.register-button {
+        width: 30%;
+    }
+
+    section.desktop-journey div.desktop-journey-left div.desktop-journey-image-title {
+        width: 50%;
+        max-width: 900px;
+    }
+
+    section.desktop-journey div.desktop-journey-milky-way-image {
+        width: 80%;
+        float: right;
+    }
+
+    section.desktop-class-info {
+        background: linear-gradient(148.74deg, #0071BB 13.32%, rgba(27, 20, 100, 0) 74.05%);
+    }
+
+    section.desktop-class-info div.desktop-class-info-list {
+        gap: 30px;
+    }
+
+    section.desktop-class-info div.desktop-class-info-list div.desktop-class-info-item {
+        width: 30%;
+    }
+
+    section.desktop-class-info div.desktop-class-info-list div.desktop-class-info-item img {
+        max-width: 30%;
+    }
+
+    section.desktop-class-info div.desktop-class-info-list div.desktop-class-info-item p {
+        font-size: 12px;
+    }
+
+    section.desktop-class-info div.desktop-class-info-list div.desktop-class-info-item h3 {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    section.desktop-products div.desktop-products-list div.desktop-products-item {
+        max-width: 271px;
+        width: 15%;
+    }
+
+    section.desktop-promotion div.desktop-promotion-list {
+        gap: 50px;
+    }
+
+    section.desktop-promotion div.register-button {
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    section.desktop-top nav.navbar a.navbar-brand img.desktop-logo {
+        width: 304px;
+    }
+
+    section div.desktop-form {
+        position: absolute;
+        max-width: 60%;
+        width: 100%;
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    section div.desktop-form div.register-button {
+        max-width: 280px;
+        width: 100%;
+    }
+
+    section.desktop-overview img.overview-person-image {
+        width: 130%;
+    }
+
+    section.desktop-overview img.overview-person-image-last {
+        margin-left: -30%;
+    }
+
+    section.desktop-overview p.overview-item-title {
+        font-size: 24px;
+    }
+
+    section.desktop-overview p.overview-item-description {
+        font-size: 16px;
+    }
+
+    div.video-section-bg {
+        padding-bottom: 400px;
+    }
+
+    img.video-section-rocket {
+        width: 70px;
+        bottom: -30px;
+    }
+
+    section.video-section {
+        padding-bottom: 60px;
+    }
+
+    section.desktop-value div.bg-net {
+        padding: 150px 0;
+        margin-top: -50px;
+    }
+
+    section.desktop-promotion div.desktop-promotion-list div:nth-child(2) {
+        margin-top: 70px !important;
+    }
+
+    section.desktop-promotion div.desktop-promotion-list div:nth-child(3) {
+        margin-top: 140px !important;
+    }
+
+    section.desktop-promotion div.register-button {
+        width: 360px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    section.desktop-overview p.overview-item-title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    section.desktop-overview p.overview-item-description {
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    div.video-section-bg {
+        padding-bottom: 350px;
+    }
+
+    section.desktop-activity div.desktop-activity-list {
+        gap: 30px
+    }
+
+    section.desktop-activity div.desktop-activity-list div.desktop-activity-item {
+        position: relative;
+        padding-left: 22%;
+        padding-top: 22%;
+        border: 5px solid white;
+        max-width: 340px;
+        max-height: 340px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    div.video-section-bg {
+        padding-bottom: 500px;
+    }
+
+    section.desktop-value div.bg-net:after {
+        height: 130%;
+    }
+}

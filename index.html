@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css ">
+    <link rel="stylesheet" href="style.css ">
+    <title>Ivy global</title>
+</head>
+<body>
+
+<!--Mobile banner-->
+<section class="mobile-top d-block d-lg-none">
+    <nav class="navbar navbar-expand-lg navbar-light" id="mobile-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/images/logo.png" class="d-inline-block align-top mobile-logo" alt="Ivy">
+            </a>
+
+            <i class="fa-solid fa-bars fa-inverse ivy-hamburger-icon" id="ivy-hamburger-icon" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation"></i>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#mobile-overview">Tổng quan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#mobile-activity">Hoạt động</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#mobile-value">Trại hè</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#mobile-class-info">Thông tin lớp học</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#mobile-promotion">Ưu đãi</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-form" id="mobile-register-form">
+        <div class="container">
+            <form>
+                <div class="row gy-3">
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <input placeholder="Họ & tên phụ huynh:" required/>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <input placeholder="Số điện thoại:" required/>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <input placeholder="Email:" type="email" required/>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <input placeholder="Khu vực:" required/>
+                    </div>
+                </div>
+                <div class="d-flex w-100 justify-content-center mt-4">
+                    <div class="register-button">
+                        <a href="#mobile-register-form">
+                            <img src="images/register.png">
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!--Mobile banner-->
+
+<!--Desktop banner -->
+<section class="desktop-top d-none d-lg-block">
+    <img src="images/banner-desktop.png" class="desktop-banner">
+    <div class="container">
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" class="d-inline-block align-top desktop-logo" alt="Ivy">
+            </a>
+            <div class="d-flex ms-5">
+                <a class="nav-link text-white " href="#desktop-overview">Tổng quan</a>
+                <a class="nav-link text-white" href="#desktop-activity">Hoạt động</a>
+                <a class="nav-link text-white" href="#desktop-value">Trại hè</a>
+                <a class="nav-link text-white" href="#desktop-class-info">Thông tin lớp học</a>
+                <a class="nav-link text-white" href="#desktop-promotion">Ưu đãi</a>
+            </div>
+        </nav>
+    </div>
+</section>
+<!--Desktop banner -->
+
+<!--Desktop form-->
+<section class="position-relative d-none d-lg-block">
+    <div class="container">
+        <div class="desktop-form" id="desktop-register-form">
+            <form>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="row gy-3">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <input placeholder="Họ & tên phụ huynh:" required/>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <input placeholder="Số điện thoại:" required/>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <input placeholder="Email:" type="email" required/>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <input placeholder="Khu vực:" required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+                            <div class="register-button">
+                                <a href="#desktop-register-form">
+                                    <img src="images/register.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!--Desktop form-->
+
+<div class="gradient-bg">
+    <!--Mobile overview-->
+    <section id="mobile-overview" class="mobile-overview d-block d-lg-none bg-star pb-5">
+        <div class="container">
+            <div class="d-flex justify-content-center w-100 pt-5">
+                <div class="w-100">
+                    <img src="images/travel.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="w-100">
+                        <img src="images/person-1.png">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h4 class="text-white batman-font text-center">GIAO LƯU VĂN HÓA QUỐC TẾ</h4>
+                    <p class="text-white text-center mt-3">
+                        Cơ hội giao lưu với bạn bè cùng trang lứa tại khắp Việt Nam và trên toàn thế giới. Kết nối &
+                        sinh hoạt trực tuyến với người bản địa dưới sự dẫn dắt của các giáo viên trường Mỹ dày dặn kinh
+                        nghiệm, có chứng chỉ giảng dạy
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="w-100">
+                        <img src="images/person-2.png" style="margin-left: -10%">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h4 class="text-white batman-font text-center">PHÁT TRIỂN TOÀN DIỆN 12 KỸ NĂNG THẾ KỶ 21 </h4>
+                    <p class="text-white text-center mt-3">
+                        Được tiếp cận mô hình giáo dục hàng đầu thế giới, giúp con trang bị những kỹ năng cần thiết -
+                        chuẩn bị hành trang cho tương lai với lớp học chỉ từ 12 - 15 học sinh.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="w-100">
+                        <img src="images/person-3.png">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h4 class="text-white batman-font text-center">
+                        VUI HỌC - THỰC HÀNH KỸ NĂNG QUA CÁC DỰ ÁN WEBSITE CÁ NHÂN
+                    </h4>
+                    <p class="text-white text-center mt-3">
+                        Mùa hè năng động, sôi nổi học và chơi với các dự án hàng tuần. Thử sức sáng tạo với website cá
+                        nhân
+                        và triển lãm thực tế ảo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Mobile overview-->
+
+    <!--Desktop overview-->
+    <section class="desktop-overview d-none d-lg-block bg-star" id="desktop-overview">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <img class="overview-person-image" src="images/person-1.png">
+                </div>
+                <div class="col-8 d-flex align-items-center">
+                    <div>
+                        <div class="d-flex justify-content-end">
+                            <div class="w-75">
+                                <img src="images/travel.png">
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <p class="text-white batman-font overview-item-title">GIAO LƯU VĂN HÓA QUỐC TẾ</p>
+                            <p class="text-white mt-3 overview-item-description">
+                                Cơ hội giao lưu với bạn bè cùng trang lứa tại khắp Việt Nam và trên toàn thế giới. Kết
+                                nối &
+                                sinh
+                                hoạt trực tuyến với người bản địa dưới sự dẫn dắt của các giáo viên trường Mỹ dày dặn
+                                kinh
+                                nghiệm,
+                                có chứng chỉ giảng dạy
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 d-flex align-items-center">
+                    <div>
+                        <p class="text-white batman-font overview-item-title">
+                            PHÁT TRIỂN TOÀN DIỆN 12 KỸ NĂNG THẾ KỶ 21
+                        </p>
+                        <p class="text-white mt-3 overview-item-description">
+                            Được tiếp cận mô hình giáo dục hàng đầu thế giới, giúp con trang bị những kỹ năng cần thiết
+                            -
+                            chuẩn bị hành trang cho tương lai với lớp học chỉ từ 12 - 15 học sinh.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img class="overview-person-image" src="images/person-2.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img class="overview-person-image overview-person-image-last" src="images/person-3.png">
+                </div>
+                <div class="col-8">
+                    <div class="mt-5 ms-5">
+                        <p class="text-white batman-font overview-item-title">
+                            VUI HỌC - THỰC HÀNH KỸ NĂNG QUA CÁC DỰ ÁN WEBSITE CÁ NHÂN
+                        </p>
+                        <p class="text-white mt-3 overview-item-description">
+                            Mùa hè năng động, sôi nổi học và chơi với các dự án hàng tuần. Thử sức sáng tạo với website
+                            cá
+                            nhân và triển lãm thực tế ảo.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Desktop overview-->
+
+    <!--Video-->
+    <section class="bg-star video-section">
+        <div class="video-section-bg position-relative">
+            <div class="container">
+                <div class="iframe-video justify-content-center d-flex d-sm-none">
+                    <!--Change src and keep dimension-->
+                    <iframe width="350" height="175"
+                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+                <div class="iframe-video justify-content-center d-none d-sm-flex d-md-none">
+                    <!--Change src and keep dimension-->
+                    <iframe width="500" height="250"
+                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+                <div class="iframe-video justify-content-center d-none d-md-flex d-lg-none">
+                    <!--Change src and keep dimension-->
+                    <iframe width="624" height="312"
+                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+                <div class="iframe-video justify-content-center d-none d-lg-flex d-xl-none">
+                    <!--Change src and keep dimension-->
+                    <iframe width="824" height="412"
+                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+                <div class="iframe-video justify-content-center d-none d-xl-flex d-xxl-none">
+                    <!--Change src and keep dimension-->
+                    <iframe width="1024" height="512"
+                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+                <div class="iframe-video justify-content-center d-none d-xxl-flex">
+                    <!--Change src and keep dimension-->
+                    <iframe width="1224" height="612"
+                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+            </div>
+            <img class="video-section-rocket" src="images/rocket.png"/>
+        </div>
+    </section>
+    <!--Video-->
+
+    <!--Mobile value-->
+    <section id="mobile-value" class="bg-star d-block d-lg-none mobile-value">
+        <div class="container">
+            <div class="d-flex justify-content-center w-100">
+                <div class="w-100">
+                    <img src="images/six-value.png">
+                </div>
+            </div>
+        </div>
+        <div class="bg-net position-relative">
+            <div class="container">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                <img src="images/light.png" class="d-block w-75" alt="...">
+                            </div>
+                            <div class="carousel-caption">
+                                <h3 class="batman-font text-white value-title">
+                                    TINH THẦN GIÁO DỤC KHAI PHÓNG TỰ DO SÁNG TẠO
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="images/light.png" class="d-block w-75" alt="...">
+                            </div>
+                            <div class="carousel-caption">
+                                <h3 class="batman-font text-white value-title">
+                                    GIÁO TRÌNH CHUẨN MỸ NỀN TẢNG HỌC EDMENTUM
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="images/light.png" class="d-block w-75" alt="...">
+                            </div>
+                            <div class="carousel-caption">
+                                <h3 class="batman-font text-white value-title">
+                                    LỚP HỌC TƯƠNG TÁC TRỰC TUYẾN
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="images/light.png" class="d-block w-75" alt="...">
+                            </div>
+                            <div class="carousel-caption">
+                                <h3 class="batman-font text-white value-title">
+                                    GIÁO VIÊN MỸ VỚI BẰNG CẤP VÀ CHUYÊN MÔN CAO
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="images/light.png" class="d-block w-75" alt="...">
+                            </div>
+                            <div class="carousel-caption">
+                                <h3 class="batman-font text-white value-title">
+                                    RÈN LUYỆN KỸ NĂNG TIẾNG ANH CHUẨN CCSS (Mỹ)
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="images/light.png" class="d-block w-75" alt="...">
+                            </div>
+                            <div class="carousel-caption">
+                                <h3 class="batman-font text-white value-title">
+                                    ỨNG DỤNG CÔNG NGHỆ GIÁO DỤC
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Mobile value-->
+
+    <!--Desktop value-->
+    <section id="desktop-value" class="bg-star d-none d-lg-block desktop-value">
+        <div class="container">
+            <div class="d-flex justify-content-center w-100">
+                <div class="w-50" style="max-width: 1000px">
+                    <img src="images/six-value.png">
+                </div>
+            </div>
+        </div>
+        <div class="bg-net position-relative">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="w-75 position-relative">
+                            <img src="images/light.png">
+                            <h3 class="batman-font text-white value-title text-center">
+                                TINH THẦN GIÁO DỤC KHAI PHÓNG TỰ DO SÁNG TẠO
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="w-75 position-relative">
+                            <img src="images/light.png">
+                            <h3 class="batman-font text-white value-title text-center">
+                                GIÁO TRÌNH CHUẨN MỸ NỀN TẢNG HỌC EDMENTUM
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="w-75 position-relative">
+                            <img src="images/light.png">
+                            <h3 class="batman-font text-white value-title text-center">
+                                LỚP HỌC TƯƠNG TÁC TRỰC TUYẾN
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5 mt-5">
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="w-75 position-relative">
+                            <img src="images/light.png">
+                            <h3 class="batman-font text-white value-title text-center">
+                                GIÁO VIÊN MỸ VỚI BẰNG CẤP VÀ CHUYÊN MÔN CAO
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="w-75 position-relative">
+                            <img src="images/light.png">
+                            <h3 class="batman-font text-white value-title text-center">
+                                RÈN LUYỆN KỸ NĂNG TIẾNG ANH CHUẨN CCSS (Mỹ)
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="w-75 position-relative">
+                            <img src="images/light.png">
+                            <h3 class="batman-font text-white value-title text-center">
+                                ỨNG DỤNG CÔNG NGHỆ GIÁO DỤC
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Desktop value-->
+
+    <!--Mobile map-->
+    <section class="bg-star d-block d-lg-none mobile-map mt-5">
+        <div class="container">
+            <img src="images/map-mobile.png"/>
+        </div>
+        <div class="mobile-message-block pt-4 pb-2">
+            <div class="container">
+                <p class="text-white text-center">
+                    Các bạn học sinh là những nhà thám hiểm du hành thế giới rộng lớn và mới mẻ. Tại trại hè, các bạn sẽ
+                    khám phá không chỉ thiên nhiên, văn hoá, khoa học, mà còn chính những tiềm năng của bản thân
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--Mobile map-->
+
+    <!--Desktop map-->
+    <section class="bg-star d-none d-lg-block desktop-map">
+        <div class="container">
+            <img src="images/map-desktop.svg"/>
+
+            <div class="desktop-message-block">
+                <p class="text-white text-center w-75">
+                    Các bạn học sinh là những nhà thám hiểm du hành thế giới rộng lớn và mới mẻ. Tại trại hè, các bạn sẽ
+                    khám phá không chỉ thiên nhiên, văn hoá, khoa học, mà còn chính những tiềm năng của bản thân
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--Desktop map-->
+
+    <!--Mobile activity-->
+    <section id="mobile-activity" class="bg-star d-block d-lg-none mobile-activity py-5">
+        <div class="container">
+            <div class="mobile-activity-item">
+                <h3 class="text-white text-center batman-font">KIẾN THỨC</h3>
+                <p class="text-center">Học kiến thức về địa lý, văn hoá, xã hội thông qua tiếng Anh.</p>
+            </div>
+            <div class="mobile-activity-item mt-3">
+                <h3 class="text-white text-center batman-font">ĐỌC VÀ SÁNG TẠO TRUYỆN</h3>
+                <p class="text-center">
+                    Đọc truyện và sáng tạo truyện.
+                    Luyện đọc trôi chảy câu chuyện cổ tích của quốc gia các em đến. Kể và tự sáng tạo phiên bản truyện
+                    của riêng mình
+                </p>
+            </div>
+            <div class="mobile-activity-item mt-3">
+                <h3 class="text-white text-center batman-font">DU LỊCH THỰC TẾ ẢO</h3>
+                <p class="text-center">
+                    DU LỊCH THỰC TẾ ẢO
+                </p>
+            </div>
+            <div class="mobile-activity-item mt-3">
+                <h3 class="text-white text-center batman-font">GIAO LƯU VĂN HÓA</h3>
+                <p class="text-center">
+                    Giao lưu văn hóa, kết nối với bạn bè khắp năm châu thông qua các giờ học không biên giới.
+                </p>
+            </div>
+            <div class="mobile-activity-item mt-3">
+                <h3 class="text-white text-center batman-font">DỰ ÁN CÁ NHÂN & DỰ ÁN NHÓM</h3>
+                <p class="text-center">
+                    Học kỹ năng tư duy - thuyết trình các dự án bằng tiếng Anh.
+                </p>
+            </div>
+            <div class="mobile-activity-item mt-3">
+                <h3 class="text-white text-center batman-font">HỒ SƠ NĂNG LỰC CÁ NHÂN</h3>
+                <p class="text-center">
+                    Xây dựng website cá nhân về quá trình khám phá, trải nghiệm và dự án đã hoàn thiện xuyên suốt trại
+                    hè
+                </p>
+            </div>
+            <div class="mobile-activity-item mt-3">
+                <h3 class="text-white text-center batman-font">HOẠT ĐỘNG THƯ GIÃN - VẬN ĐỘNG</h3>
+                <p class="text-center">
+                    Những giờ phút thư giãn thú vị với đa dạng bộ môn: nhảy, múa, võ,.....
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--Mobile activity-->
+
+    <!--Desktop activity-->
+    <section id="desktop-activity" class="bg-star d-none d-lg-block desktop-activity">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center desktop-activity-list">
+                <div class="desktop-activity-item">
+                    <h3 class="text-white text-center batman-font">KIẾN THỨC</h3>
+                    <p class="text-center">Học kiến thức về địa lý, văn hoá, xã hội thông qua tiếng Anh.</p>
+                </div>
+                <div class="desktop-activity-item">
+                    <h3 class="text-white text-center batman-font">ĐỌC VÀ SÁNG TẠO TRUYỆN</h3>
+                    <p class="text-center">
+                        Đọc truyện và sáng tạo truyện.
+                        Luyện đọc trôi chảy câu chuyện cổ tích của quốc gia các em đến. Kể và tự sáng tạo phiên bản
+                        truyện của riêng mình
+                    </p>
+                </div>
+                <div class="desktop-activity-item">
+                    <h3 class="text-white text-center batman-font">DU LỊCH THỰC TẾ ẢO</h3>
+                    <p class="text-center">
+                        DU LỊCH THỰC TẾ ẢO
+                    </p>
+                </div>
+                <div class="desktop-activity-item">
+                    <h3 class="text-white text-center batman-font">GIAO LƯU VĂN HÓA</h3>
+                    <p class="text-center">
+                        Giao lưu văn hóa, kết nối với bạn bè khắp năm châu thông qua các giờ học không biên giới.
+                    </p>
+                </div>
+                <div class="desktop-activity-item">
+                    <h3 class="text-white text-center batman-font">DỰ ÁN CÁ NHÂN & DỰ ÁN NHÓM</h3>
+                    <p class="text-center">
+                        Học kỹ năng tư duy - thuyết trình các dự án bằng tiếng Anh.
+                    </p>
+                </div>
+                <div class="desktop-activity-item">
+                    <h3 class="text-white text-center batman-font">HỒ SƠ NĂNG LỰC CÁ NHÂN</h3>
+                    <p class="text-center">
+                        Xây dựng website cá nhân về quá trình khám phá, trải nghiệm và dự án đã hoàn thiện xuyên suốt
+                        trại hè
+                    </p>
+                </div>
+                <div class="desktop-activity-item">
+                    <h3 class="text-white text-center batman-font">HOẠT ĐỘNG THƯ GIÃN - VẬN ĐỘNG</h3>
+                    <p class="text-center">
+                        Những giờ phút thư giãn thú vị với đa dạng bộ môn: nhảy, múa, võ,.....
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Desktop activity-->
+
+    <!--Mobile journey-->
+    <section class="bg-star d-block d-lg-none mobile-journey mt-5 pt-5">
+        <div class="container">
+            <div class="position-relative">
+                <div class="mobile-journey-left">
+                    <div class="mobile-journey-image-title">
+                        <img src="images/journey.png"/>
+                    </div>
+                    <div class="register-button mt-4">
+                        <a href="#mobile-register-form">
+                            <img src="images/register.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="images/milky-way-mobile.png" class="mt-5"/>
+    </section>
+    <!--Mobile journey-->
+
+    <!--Desktop journey-->
+    <section class="position-relative d-none d-lg-block desktop-journey float-start">
+        <div class="container">
+            <div class="position-relative">
+                <div class="desktop-journey-left">
+                    <div class="desktop-journey-image-title">
+                        <img src="images/journey.png"/>
+                    </div>
+                    <div class="register-button mt-4">
+                        <a href="#desktop-register-form">
+                            <img src="images/register.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desktop-journey-milky-way-image">
+            <img src="images/milky-way-desktop.png" class=""/>
+        </div>
+    </section>
+    <!--Desktop journey-->
+
+    <!--Mobile class info-->
+    <section id="mobile-class-info" class="mobile-class-info d-block d-lg-none py-3">
+        <div class="container">
+            <div class="d-flex justify-content-center w-100">
+                <div class="w-75">
+                    <img src="images/class-info.png">
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center w-100">
+                <img src="images/person-with-music.svg"
+                     style="mix-blend-mode: screen; margin-left: -10%; margin-top: -50px">
+            </div>
+            <div class="d-flex justify-content-center flex-wrap w-100 mobile-class-info-list">
+                <div class="mobile-class-info-item d-flex align-items-center flex-column">
+                    <img src="images/group.svg">
+                    <p class="text-white text-center mt-3">Sĩ số tối đa</p>
+                    <h3 class="text-white text-center mt-1">15 học sinh / lớp</h3>
+                </div>
+                <div class="mobile-class-info-item d-flex align-items-center flex-column">
+                    <img src="images/calendar.svg">
+                    <p class="text-white text-center mt-3">Thời lượng khóa học</p>
+                    <h3 class="text-white text-center mt-1">2 tuần: 10 buổi</h3>
+                    <h3 class="text-white text-center mt-1">4 tuần: 20 buổi</h3>
+                    <h3 class="text-white text-center mt-1">6 tuần: 30 buổi</h3>
+                </div>
+                <div class="mobile-class-info-item d-flex align-items-center flex-column">
+                    <img src="images/teacher.svg">
+                    <p class="text-white text-center mt-3">Giáo viên</p>
+                    <h3 class="text-white text-center mt-1">50% giáo viên Mỹ</h3>
+                    <h3 class="text-white text-center mt-1">50% giáo viên Việt Nam</h3>
+                </div>
+                <div class="mobile-class-info-item d-flex align-items-center flex-column">
+                    <img src="images/runing-man.svg">
+                    <p class="text-white text-center mt-3">Chương trình kết hợp</p>
+                    <h3 class="text-white text-center mt-1">học kiến thức, thực hành</h3>
+                    <h3 class="text-white text-center mt-1">và vận động</h3>
+                </div>
+                <div class="mobile-class-info-item d-flex align-items-center flex-column">
+                    <img src="images/brain.svg">
+                    <p class="text-white text-center mt-3">Chương trình giảng dạy</p>
+                    <h3 class="text-white text-center mt-1">100% bằng tiếng Anh</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Mobile class info-->
+
+    <!--Desktop class info-->
+    <section id="desktop-class-info" class="bg-star d-none d-lg-block desktop-class-info">
+        <div class="container">
+            <div class="d-flex justify-content-center w-100">
+                <div class="w-50" style="max-width: 1000px">
+                    <img src="images/class-info.png">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-7">
+                    <div class="d-flex justify-content-center flex-wrap w-100 desktop-class-info-list mt-5">
+                        <div class="desktop-class-info-item d-flex align-items-center flex-column">
+                            <img src="images/group.svg">
+                            <p class="text-white text-center mt-3">Sĩ số tối đa</p>
+                            <h3 class="text-white text-center mt-1">15 học sinh / lớp</h3>
+                        </div>
+                        <div class="desktop-class-info-item d-flex align-items-center flex-column">
+                            <img src="images/calendar.svg">
+                            <p class="text-white text-center mt-3">Thời lượng khóa học</p>
+                            <h3 class="text-white text-center mt-1">2 tuần: 10 buổi</h3>
+                            <h3 class="text-white text-center mt-1">4 tuần: 20 buổi</h3>
+                            <h3 class="text-white text-center mt-1">6 tuần: 30 buổi</h3>
+                        </div>
+                        <div class="desktop-class-info-item d-flex align-items-center flex-column">
+                            <img src="images/teacher.svg">
+                            <p class="text-white text-center mt-3">Giáo viên</p>
+                            <h3 class="text-white text-center mt-1">50% giáo viên Mỹ</h3>
+                            <h3 class="text-white text-center mt-1">50% giáo viên Việt Nam</h3>
+                        </div>
+                        <div class="desktop-class-info-item d-flex align-items-center flex-column">
+                            <img src="images/runing-man.svg">
+                            <p class="text-white text-center mt-3">Chương trình kết hợp</p>
+                            <h3 class="text-white text-center mt-1">học kiến thức, thực hành</h3>
+                            <h3 class="text-white text-center mt-1">và vận động</h3>
+                        </div>
+                        <div class="desktop-class-info-item d-flex align-items-center flex-column">
+                            <img src="images/brain.svg">
+                            <p class="text-white text-center mt-3">Chương trình giảng dạy</p>
+                            <h3 class="text-white text-center mt-1">100% bằng tiếng Anh</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="d-flex justify-content-center w-100">
+                        <img src="images/person-with-music.svg"
+                             style="mix-blend-mode: screen; margin-left: -10%; margin-top: -50px; width: 110%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Desktop class info-->
+
+    <!--Mobile products-->
+    <section class="mobile-products d-block d-lg-none py-5">
+        <div class="container">
+            <div class="d-flex justify-content-center w-100">
+                <div class="w-75">
+                    <img src="images/product-title-image.png">
+                </div>
+            </div>
+
+            <div class="d-flex w-100 justify-content-center mobile-products-list-first mt-5">
+                <div class="mobile-products-item d-flex align-items-center flex-column">
+                    <img src="images/document.png">
+                </div>
+                <div class="mobile-products-item d-flex align-items-center flex-column">
+                    <img src="images/certificate.png" style="width: 115%">
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-around w-100 mobile-products-list-last mt-3">
+                <div class="mobile-products-item d-flex align-items-center flex-column">
+                    <img src="images/passport.png">
+                </div>
+                <div class="mobile-products-item d-flex align-items-center flex-column">
+                    <img src="images/exhibition.png" style="width: 106%">
+                </div>
+                <div class="mobile-products-item d-flex align-items-center flex-column">
+                    <img src="images/website.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Mobile products-->
+
+    <!--Desktop products-->
+    <section class="desktop-products d-none d-lg-block py-5">
+        <div class="container">
+            <div class="d-flex w-100">
+                <div class="w-50" style="max-width: 935px">
+                    <img src="images/product-title-image.png">
+                </div>
+            </div>
+            <div class="d-flex w-100 justify-content-around align-items-center desktop-products-list mt-5">
+                <div class="desktop-products-item d-flex align-items-center flex-column">
+                    <img src="images/document.png" style="width: 110%">
+                </div>
+                <div class="desktop-products-item d-flex align-items-center flex-column">
+                    <img src="images/certificate.png" style="width: 130%">
+                </div>
+                <div class="desktop-products-item d-flex align-items-center flex-column">
+                    <img src="images/passport.png">
+                </div>
+                <div class="desktop-products-item d-flex align-items-center flex-column">
+                    <img src="images/exhibition.png" style="width: 106%">
+                </div>
+                <div class="desktop-products-item d-flex align-items-center flex-column">
+                    <img src="images/website.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Desktop products-->
+
+    <!--Mobile promotion-->
+    <section id="mobile-promotion" class="mobile-promotion d-block d-lg-none py-5">
+        <div class="container">
+            <div class="d-flex justify-content-center w-100">
+                <div class="w-75">
+                    <img src="images/promotion-title-image.png">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center w-100">
+                <div style="width: 60%">
+                    <img src="images/300k.png">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center w-100 mt-5">
+                <div style="width: 55%">
+                    <img src="images/two-week.png">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center w-100 mt-5">
+                <div style="width: 55%">
+                    <img src="images/four-week.png">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center w-10 mt-5">
+                <div style="width: 55%">
+                    <img src="images/six-week.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Mobile promotion-->
+
+    <!--Desktop promotion-->
+    <section id="desktop-promotion" class="bg-star d-none d-lg-block desktop-promotion pb-5">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center w-100">
+                <div class="w-50" style="max-width: 800px">
+                    <img src="images/promotion-title-image.png">
+                </div>
+                <div style="width: 35%; max-width: 548px" class="ms-3">
+                    <img src="images/300k.png">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center desktop-promotion-list">
+                <div style="width: 30%; max-width: 424px">
+                    <img src="images/two-week.png">
+                </div>
+                <div style="width: 30%; max-width: 424px; margin-top: 50px">
+                    <img src="images/four-week.png">
+                </div>
+                <div style="width: 30%; max-width: 424px; margin-top: 100px">
+                    <img src="images/six-week.png">
+                </div>
+            </div>
+
+            <div class="d-flex w-100 justify-content-center mt-4">
+                <div class="register-button">
+                    <a href="#desktop-register-form">
+                        <img src="images/register.png">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Desktop promotion-->
+
+</div>
+<section class="footer pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 mt-5">
+                <div class="w-50 mb-4">
+                    <a href="#">
+                        <img src="images/sort-logo.png">
+                    </a>
+                </div>
+                <a class="d-flex align-items-start mt-3" style="gap: 10px">
+                    <i class="fa fa-home text-white" style="margin-top: 2px" aria-hidden="true"></i>
+                    <p class="text-white">Tòa nhà Center Point, Số 27 Lê Văn Lương, Thanh Xuân, Hà Nội</p>
+                </a>
+                <a class="d-flex align-items-center mt-3" style="gap: 10px" href="tel:+84906924592">
+                    <i class="fa fa-phone text-white" aria-hidden="true"></i>
+                    <p class="text-white">0898.083.111 - 0906.924.592</p>
+                </a>
+                <a class="d-flex align-items-center mt-3" style="gap: 10px" href="mailto:admission@ivyglobalschool.org">
+                    <i class="fa fa-envelope text-white" aria-hidden="true"></i>
+                    <p class="text-white">Email: admission@ivyglobalschool.org</p>
+                </a>
+            </div>
+            <div class="col-12 col-lg-6 mt-5">
+                <p class="text-center text-white footer-message">
+                    Ivy Global School mang đến cho học sinh và gia đình cơ hội học tập các chương trình giáo dục phổ thông chất lượng cao, với giáo trình được cung cấp từ đối tác Mỹ - Florida Virtual School và Edmentum, đã được kiểm định bởi Cognia - Tổ chức kiểm định chất lượng giáo dục vùng, được Bộ giáo dục Hoa Kỳ công nhận. Các chương trình học được giám sát và giảng dạy bởi đội ngũ giáo viên có bằng cấp và chuyên môn trong lĩnh vực giáo dục.
+                </p>
+                <div class="mt-4 d-flex justify-content-center" style="gap: 50px">
+                    <a style="width: 50px" href="https://vn.ivyglobalschool.org" target="_blank">
+                        <img src="images/earth.png"/>
+                    </a>
+                    <a style="width: 50px" href="https://www.youtube.com/channel/UCkhSwJ-ruCnNccm_Tie5kjg" target="_blank">
+                        <img src="images/youtube.png"/>
+                    </a>
+                    <a style="width: 50px" href="https://www.facebook.com/ivyglobalschoolvietnam" target="_blank">
+                        <img src="images/facebook.png"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+
+</body>
+</html>
