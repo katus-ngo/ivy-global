@@ -633,13 +633,13 @@ div.menu.sticky {
 @media only screen and (min-width: 1400px) {
 
     section.desktop-overview p.overview-item-title {
-        font-size: 28px;
-        line-height: 40px;
+        font-size: 35px;
+        line-height: 45px;
     }
 
     section.desktop-overview p.overview-item-description {
-        font-size: 22px;
-        line-height: 36px;
+        font-size: 25px;
+        line-height: 37px;
     }
 
     div.video-section-bg {
