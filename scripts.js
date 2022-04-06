@@ -5,6 +5,9 @@ const mobileRegisterForm = $('#mobile')
 const desktopRegisterButton = $('#desktop-register-button')
 const mobileRegisterButton = $('#mobile-register-button')
 
+const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+const phoneRegex = /(0[3|5|7|8|9])+([0-9]{8})\b/
+
 ivyHamburgerIcon.click(function () {
     if (mobileNavbar.hasClass('active')) {
         mobileNavbar.removeClass('active')
@@ -21,9 +24,17 @@ function onRegister(name, phone, email, address) {
     }
     if (phone.trim() == '') {
         errors.push("Vui lòng điền số điện thoại!");
+    } else {
+        if(!phone.match(phoneRegex)){
+            errors.push("Số điện thoại không hợp lệ!");
+        }
     }
     if (email.trim() == '') {
         errors.push("Vui lòng điền email!");
+    } else {
+        if(!email.match(emailRegex)) {
+            errors.push("Email không hợp lệ!");
+        }
     }
     if (address.trim() == '') {
         errors.push("Vui lòng điền khu vực!");
