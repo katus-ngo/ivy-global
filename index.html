@@ -62,7 +62,7 @@
 
     <div class="mobile-form" id="mobile-register-form">
         <div class="container">
-            <form method="post" id="register-form-mobile">
+            <form method="post" id="register-form-mobile" class="register-form">
                 <div class="row gy-3">
                     <div class="col-12 col-sm-12 col-md-6">
                         <input placeholder="Họ & tên phụ huynh:" required id="name-mobile"/>
@@ -114,7 +114,7 @@
 <section class="position-relative d-none d-lg-block">
     <div class="container">
         <div class="desktop-form" id="desktop-register-form">
-            <form method="post" id="register-form-desktop">
+            <form method="post" id="register-form-desktop" class="register-form">
                 <div class="row">
                     <div class="col-8">
                         <div class="row gy-3">
@@ -591,7 +591,7 @@
                         <img src="images/journey.png"/>
                     </div>
                     <div class="register-button mt-4">
-                        <a href="#top" class="smooth-scroll">
+                        <a href="#virtual-register" class="smooth-scroll">
                             <img src="images/register.png">
                         </a>
                     </div>
@@ -611,7 +611,7 @@
                         <img src="images/journey.png"/>
                     </div>
                     <div class="register-button mt-4">
-                        <a href="#top" class="smooth-scroll">
+                        <a href="#virtual-register" class="smooth-scroll">
                             <img src="images/register.png">
                         </a>
                     </div>
@@ -846,7 +846,7 @@
 
             <div class="d-flex w-100 justify-content-center mt-4">
                 <div class="register-button">
-                    <a href="#top" class="smooth-scroll">
+                    <a href="#virtual-register" class="smooth-scroll">
                         <img src="images/register.png">
                     </a>
                 </div>
@@ -903,6 +903,8 @@
         </div>
     </div>
 </section>
+
+<div id="virtual-register" style="position: absolute; z-index: -1;"></div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

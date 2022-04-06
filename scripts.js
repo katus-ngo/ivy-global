@@ -1,7 +1,6 @@
 const mobileNavbar = $('#mobile-navbar')
 const ivyHamburgerIcon = $('#ivy-hamburger-icon')
-const desktopRegisterForm = $('#register-form-desktop')
-const mobileRegisterForm = $('#mobile')
+const registerForm = $('form.register-form')
 const desktopRegisterButton = $('#desktop-register-button')
 const mobileRegisterButton = $('#mobile-register-button')
 
@@ -239,3 +238,17 @@ window.onscroll = function () {
     handlePlayVideo();
 
 };
+
+window.addEventListener('load', function () {
+    let y;
+    const top = registerForm.offset().top
+    const height = registerForm.height()
+    if (height > $(window).height()) {
+        y = registerForm.offset().top + 65
+    } else {
+        y = top - $(window).height() / 2 + height / 2
+    }
+
+    $('#virtual-register').css('top', y)
+})
+
