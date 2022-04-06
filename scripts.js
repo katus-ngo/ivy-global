@@ -25,14 +25,14 @@ function onRegister(name, phone, email, address) {
     if (phone.trim() == '') {
         errors.push("Vui lòng điền số điện thoại!");
     } else {
-        if(!phone.match(phoneRegex)){
+        if (!phone.match(phoneRegex)) {
             errors.push("Số điện thoại không hợp lệ!");
         }
     }
     if (email.trim() == '') {
         errors.push("Vui lòng điền email!");
     } else {
-        if(!email.match(emailRegex)) {
+        if (!email.match(emailRegex)) {
             errors.push("Email không hợp lệ!");
         }
     }
@@ -138,7 +138,6 @@ for (let i = 0; i < scrollElems.length; i++) {
 }
 
 
-
 const navItemMobile = document.querySelectorAll('.nav-item-mobile');
 
 for (let i = 0; i < scrollElems.length; i++) {
@@ -161,28 +160,82 @@ function handleStickyMenu() {
     }
 }
 
-// const ytbVideoIframe = document.querySelectorAll('.ytb-video-iframe');
-// const videoSection = $(".video-section");
-// const videoSectionTop = videoSection.offset().top;
-// function handlePlayVideo() {
-//     if (window.scrollY > videoSectionTop) {
-//         console.log(1)
-//         for (let i = 0; i < ytbVideoIframe.length; i++) {
-//             const elem = ytbVideoIframe[i];
-//             console.log('attr1:',elem.getAttribute('src'))
-//             let src = elem.getAttribute('src');
-//             if(src.includes('autoplay=1')){
-//                 return
-//             }
-//             elem.setAttribute('src', src+'?autoplay=1')
-//             console.log('attr2:',elem.getAttribute('src'))
-//         }
-//     }
-// }
+var splide = new Splide('.splide', {
+    type: 'loop',
+});
+splide.mount();
+
+const ytbVideoIframe = $('#ytb-video-iframe')
+
+function reportWindowSize() {
+    if ($(window).width() < 576) {
+        ytbVideoIframe.attr({
+            width: 350,
+            height: 175
+        })
+    } else if ($(window).width() < 768) {
+        ytbVideoIframe.attr({
+            width: 500,
+            height: 250
+        })
+    } else if ($(window).width() < 992) {
+        ytbVideoIframe.attr({
+            width: 624,
+            height: 312
+        })
+    } else if ($(window).width() < 1200) {
+        ytbVideoIframe.attr({
+            width: 824,
+            height: 412
+        })
+    } else if ($(window).width() < 1400) {
+        ytbVideoIframe.attr({
+            width: 1024,
+            height: 512
+        })
+    } else {
+        ytbVideoIframe.attr({
+            width: 1100,
+            height: 550
+        })
+    }
+}
+
+function debounce(func, delay) {
+    let timeout;
+
+    return function executedFunc(...args) {
+        if (timeout) {
+            clearTimeout(timeout);
+        }
+
+        timeout = setTimeout(() => {
+            func(...args);
+            timeout = null;
+        }, delay);
+    };
+}
+
+window.addEventListener('resize', reportWindowSize);
+reportWindowSize()
 
 
-window.onscroll = function() {
+let played = false;
+const handlePlayVideo = debounce(() => {
+    if (played) {
+        return
+    }
+    if (ytbVideoIframe.offset().top >= window.scrollY && (window.scrollY + $(window).height()) >= (ytbVideoIframe.offset().top + parseInt(ytbVideoIframe[0].height))) {
+        played = true;
+        const symbol = ytbVideoIframe[0].src.indexOf("?") > -1 ? "&" : "?";
+        ytbVideoIframe[0].src += symbol + "autoplay=1";
+        console.log(ytbVideoIframe[0].src);
+    }
+}, 500)
+
+
+window.onscroll = function () {
     handleStickyMenu();
-    // handlePlayVideo();
+    handlePlayVideo();
 
 };

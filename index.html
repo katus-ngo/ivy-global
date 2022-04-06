@@ -11,6 +11,7 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.0/dist/css/splide.min.css">
     <link rel="stylesheet" href="style.css ">
     <title>Ivy global</title>
 </head>
@@ -277,49 +278,9 @@
     <section class="video-section">
         <div class="video-section-bg position-relative">
             <div class="container">
-                <div class="iframe-video justify-content-center d-flex d-sm-none">
+                <div class="iframe-video justify-content-center d-flex">
                     <!--Change src and keep dimension-->
-                    <iframe class="ytb-video-iframe" width="350" height="175"
-                            src="https://www.youtube.com/embed/1DdQIsO5Lho"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                </div>
-                <div class="iframe-video justify-content-center d-none d-sm-flex d-md-none">
-                    <!--Change src and keep dimension-->
-                    <iframe class="ytb-video-iframe" width="500" height="250"
-                            src="https://www.youtube.com/embed/1DdQIsO5Lho"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                </div>
-                <div class="iframe-video justify-content-center d-none d-md-flex d-lg-none">
-                    <!--Change src and keep dimension-->
-                    <iframe class="ytb-video-iframe" width="624" height="312"
-                            src="https://www.youtube.com/embed/1DdQIsO5Lho"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                </div>
-                <div class="iframe-video justify-content-center d-none d-lg-flex d-xl-none">
-                    <!--Change src and keep dimension-->
-                    <iframe class="ytb-video-iframe" width="824" height="412"
-                            src="https://www.youtube.com/embed/1DdQIsO5Lho"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                </div>
-                <div class="iframe-video justify-content-center d-none d-xl-flex d-xxl-none">
-                    <!--Change src and keep dimension-->
-                    <iframe class="ytb-video-iframe" width="1024" height="512"
-                            src="https://www.youtube.com/embed/1DdQIsO5Lho"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                </div>
-                <div class="iframe-video justify-content-center d-none d-xxl-flex">
-                    <!--Change src and keep dimension-->
-                    <iframe class="ytb-video-iframe" width="1224" height="612"
+                    <iframe id="ytb-video-iframe" class="ytb-video-iframe" width="350" height="175"
                             src="https://www.youtube.com/embed/1DdQIsO5Lho"
                             title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -332,7 +293,7 @@
     <!--Video-->
 
     <!--Mobile value-->
-    <section id="mobile-value" class="d-block d-lg-none mobile-value bg-star">
+    <section id="mobile-value" class="d-block d-lg-none mobile-value bg-star-block">
         <div class="container">
             <div class="d-flex justify-content-center w-100">
                 <div class="w-100">
@@ -342,80 +303,71 @@
         </div>
         <div class="bg-net position-relative">
             <div class="container">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="d-flex justify-content-center">
-                                <img src="images/light.png" class="d-block w-75" alt="...">
-                            </div>
-                            <div class="carousel-caption">
-                                <h3 class="batman-font text-white value-title">
-                                    TINH THẦN GIÁO DỤC KHAI PHÓNG TỰ DO SÁNG TẠO
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-center">
-                                <img src="images/light.png" class="d-block w-75" alt="...">
-                            </div>
-                            <div class="carousel-caption">
-                                <h3 class="batman-font text-white value-title">
-                                    GIÁO TRÌNH CHUẨN MỸ NỀN TẢNG HỌC EDMENTUM
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-center">
-                                <img src="images/light.png" class="d-block w-75" alt="...">
-                            </div>
-                            <div class="carousel-caption">
-                                <h3 class="batman-font text-white value-title">
-                                    LỚP HỌC TƯƠNG TÁC TRỰC TUYẾN
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-center">
-                                <img src="images/light.png" class="d-block w-75" alt="...">
-                            </div>
-                            <div class="carousel-caption">
-                                <h3 class="batman-font text-white value-title">
-                                    GIÁO VIÊN MỸ VỚI BẰNG CẤP VÀ CHUYÊN MÔN CAO
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-center">
-                                <img src="images/light.png" class="d-block w-75" alt="...">
-                            </div>
-                            <div class="carousel-caption">
-                                <h3 class="batman-font text-white value-title">
-                                    RÈN LUYỆN KỸ NĂNG TIẾNG ANH CHUẨN CCSS (Mỹ)
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-center">
-                                <img src="images/light.png" class="d-block w-75" alt="...">
-                            </div>
-                            <div class="carousel-caption">
-                                <h3 class="batman-font text-white value-title">
-                                    ỨNG DỤNG CÔNG NGHỆ GIÁO DỤC
-                                </h3>
-                            </div>
-                        </div>
+                <div class="splide" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="d-flex justify-content-center">
+                                    <img src="images/light.png" class="d-block w-75" alt="...">
+                                </div>
+                                <div class="carousel-caption">
+                                    <h3 class="batman-font text-white value-title" style="line-height: 30px">
+                                        TINH THẦN GIÁO DỤC <br/> KHAI PHÓNG TỰ DO <br/> SÁNG TẠO
+                                    </h3>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="d-flex justify-content-center">
+                                    <img src="images/light.png" class="d-block w-75" alt="...">
+                                </div>
+                                <div class="carousel-caption">
+                                    <h3 class="batman-font text-white value-title" style="line-height: 30px">
+                                        GIÁO TRÌNH CHUẨN MỸ <br/> NỀN TẢNG HỌC EDMENTUM
+                                    </h3>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="d-flex justify-content-center">
+                                    <img src="images/light.png" class="d-block w-75" alt="...">
+                                </div>
+                                <div class="carousel-caption">
+                                    <h3 class="batman-font text-white value-title" style="line-height: 30px">
+                                        LỚP HỌC TƯƠNG TÁC <br/> TRỰC TUYẾN
+                                    </h3>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="d-flex justify-content-center">
+                                    <img src="images/light.png" class="d-block w-75" alt="...">
+                                </div>
+                                <div class="carousel-caption">
+                                    <h3 class="batman-font text-white value-title" style="line-height: 30px">
+                                        GIÁO VIÊN MỸ <br/> VỚI BẰNG CẤP <br/> VÀ CHUYÊN MÔN CAO
+                                    </h3>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="d-flex justify-content-center">
+                                    <img src="images/light.png" class="d-block w-75" alt="...">
+                                </div>
+                                <div class="carousel-caption">
+                                    <h3 class="batman-font text-white value-title" style="line-height: 30px">
+                                        RÈN LUYỆN <br/> KỸ NĂNG TIẾNG ANH <br/> CHUẨN CCSS (Mỹ)
+                                    </h3>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="d-flex justify-content-center">
+                                    <img src="images/light.png" class="d-block w-75" alt="...">
+                                </div>
+                                <div class="carousel-caption">
+                                    <h3 class="batman-font text-white value-title" style="line-height: 35px">
+                                        ỨNG DỤNG <br/> CÔNG NGHỆ GIÁO DỤC
+                                    </h3>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
         </div>
@@ -955,6 +907,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.0/dist/js/splide.min.js" integrity="sha256-prxhwuzHf8jpPmGw3vgYHrJDIlpf8LuK85rhTEY9ylc=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
