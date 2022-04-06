@@ -5,19 +5,6 @@ const mobileRegisterForm = $('#mobile')
 const desktopRegisterButton = $('#desktop-register-button')
 const mobileRegisterButton = $('#mobile-register-button')
 
-const navbar = $(".menu");
-const sticky = navbar.offset().top;
-window.onscroll = function() {
-    console.log('sticky',sticky)
-    console.log('window.scrollY',window.scrollY)
-    if (window.scrollY > sticky) {
-        navbar.addClass("sticky")
-    } else {
-        navbar.removeClass("sticky");
-    }
-};
-
-
 ivyHamburgerIcon.click(function () {
     if (mobileNavbar.hasClass('active')) {
         mobileNavbar.removeClass('active')
@@ -151,3 +138,40 @@ for (let i = 0; i < scrollElems.length; i++) {
         mobileNavbar.removeClass('active')
     })
 }
+
+const navbar = $(".menu");
+const sticky = navbar.offset().top;
+
+function handleStickyMenu() {
+    if (window.scrollY > sticky) {
+        navbar.addClass("sticky")
+    } else {
+        navbar.removeClass("sticky");
+    }
+}
+
+// const ytbVideoIframe = document.querySelectorAll('.ytb-video-iframe');
+// const videoSection = $(".video-section");
+// const videoSectionTop = videoSection.offset().top;
+// function handlePlayVideo() {
+//     if (window.scrollY > videoSectionTop) {
+//         console.log(1)
+//         for (let i = 0; i < ytbVideoIframe.length; i++) {
+//             const elem = ytbVideoIframe[i];
+//             console.log('attr1:',elem.getAttribute('src'))
+//             let src = elem.getAttribute('src');
+//             if(src.includes('autoplay=1')){
+//                 return
+//             }
+//             elem.setAttribute('src', src+'?autoplay=1')
+//             console.log('attr2:',elem.getAttribute('src'))
+//         }
+//     }
+// }
+
+
+window.onscroll = function() {
+    handleStickyMenu();
+    // handlePlayVideo();
+
+};
