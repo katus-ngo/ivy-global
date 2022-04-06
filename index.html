@@ -14,42 +14,45 @@
     <link rel="stylesheet" href="style.css ">
     <title>Ivy global</title>
 </head>
-<body>
+<body id="top">
 
 <!--Mobile banner-->
 <section class="mobile-top d-block d-lg-none">
-    <nav class="navbar navbar-expand-lg navbar-light" id="mobile-navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" class="d-inline-block align-top mobile-logo" alt="Ivy">
-            </a>
+    <div class="menu">
+        <nav class="navbar navbar-expand-lg navbar-light" id="mobile-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand smooth-scroll" href="#top">
+                    <img src="images/logo.png" class="d-inline-block align-top mobile-logo" alt="Ivy">
+                </a>
 
-            <i class="fa-solid fa-bars fa-inverse ivy-hamburger-icon" id="ivy-hamburger-icon" data-bs-toggle="collapse"
-               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-               aria-label="Toggle navigation"></i>
+                <i class="fa-solid fa-bars fa-inverse ivy-hamburger-icon" id="ivy-hamburger-icon"
+                   data-bs-toggle="collapse"
+                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                   aria-label="Toggle navigation"></i>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#mobile-overview">Tổng quan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#mobile-activity">Hoạt động</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#mobile-value">Trại hè</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#mobile-class-info">Thông tin lớp học</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#mobile-promotion">Ưu đãi</a>
-                    </li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item nav-item-mobile">
+                            <a class="nav-link text-white smooth-scroll" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" href="#mobile-overview">Tổng quan</a>
+                        </li>
+                        <li class="nav-item nav-item-mobile">
+                            <a class="nav-link text-white smooth-scroll" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" href="#mobile-activity">Hoạt động</a>
+                        </li>
+                        <li class="nav-item nav-item-mobile">
+                            <a class="nav-link text-white smooth-scroll" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" href="#mobile-value">Trại hè</a>
+                        </li>
+                        <li class="nav-item nav-item-mobile">
+                            <a class="nav-link text-white smooth-scroll" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" href="#mobile-class-info">Thông tin lớp học</a>
+                        </li>
+                        <li class="nav-item nav-item-mobile">
+                            <a class="nav-link text-white smooth-scroll" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" href="#mobile-promotion">Ưu đãi</a>
+                        </li>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <div class="mobile-form" id="mobile-register-form">
         <div class="container">
@@ -82,19 +85,21 @@
 <!--Desktop banner -->
 <section class="desktop-top d-none d-lg-block">
     <img src="images/banner-desktop.png" class="desktop-banner">
-    <div class="container">
-        <nav class="navbar">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" class="d-inline-block align-top desktop-logo" alt="Ivy">
-            </a>
-            <div class="d-flex ms-5">
-                <a class="nav-link text-white " href="#desktop-overview">Tổng quan</a>
-                <a class="nav-link text-white" href="#desktop-activity">Hoạt động</a>
-                <a class="nav-link text-white" href="#desktop-value">Trại hè</a>
-                <a class="nav-link text-white" href="#desktop-class-info">Thông tin lớp học</a>
-                <a class="nav-link text-white" href="#desktop-promotion">Ưu đãi</a>
-            </div>
-        </nav>
+    <div class="menu">
+        <div class="container">
+            <nav class="navbar">
+                <a class="navbar-brand smooth-scroll" href="#top">
+                    <img src="images/logo.png" class="d-inline-block align-top desktop-logo" alt="Ivy">
+                </a>
+                <div class="d-flex ms-5">
+                    <a class="nav-link text-white smooth-scroll" href="#desktop-overview">Tổng quan</a>
+                    <a class="nav-link text-white smooth-scroll" href="#desktop-activity">Hoạt động</a>
+                    <a class="nav-link text-white smooth-scroll" href="#desktop-value">Trại hè</a>
+                    <a class="nav-link text-white smooth-scroll" href="#desktop-class-info">Thông tin lớp học</a>
+                    <a class="nav-link text-white smooth-scroll" href="#desktop-promotion">Ưu đãi</a>
+                </div>
+            </nav>
+        </div>
     </div>
 </section>
 <!--Desktop banner -->
@@ -137,7 +142,7 @@
 
 <div class="gradient-bg">
     <!--Mobile overview-->
-    <section id="mobile-overview" class="mobile-overview d-block d-lg-none bg-star pb-5">
+    <section id="mobile-overview" class="bg-star mobile-overview d-block d-lg-none pb-5">
         <div class="container">
             <div class="d-flex justify-content-center w-100 pt-5">
                 <div class="w-100">
@@ -195,7 +200,7 @@
     <!--Mobile overview-->
 
     <!--Desktop overview-->
-    <section class="desktop-overview d-none d-lg-block bg-star" id="desktop-overview">
+    <section class="bg-star desktop-overview d-none d-lg-block" id="desktop-overview">
         <div class="container">
             <div class="row">
                 <div class="col-4">
@@ -264,7 +269,7 @@
     <!--Desktop overview-->
 
     <!--Video-->
-    <section class="bg-star video-section">
+    <section class="video-section">
         <div class="video-section-bg position-relative">
             <div class="container">
                 <div class="iframe-video justify-content-center d-flex d-sm-none">
@@ -316,7 +321,7 @@
     <!--Video-->
 
     <!--Mobile value-->
-    <section id="mobile-value" class="bg-star d-block d-lg-none mobile-value">
+    <section id="mobile-value" class="d-block d-lg-none mobile-value bg-star">
         <div class="container">
             <div class="d-flex justify-content-center w-100">
                 <div class="w-100">
@@ -407,7 +412,7 @@
     <!--Mobile value-->
 
     <!--Desktop value-->
-    <section id="desktop-value" class="bg-star d-none d-lg-block desktop-value">
+    <section id="desktop-value" class="d-none d-lg-block desktop-value bg-star">
         <div class="container">
             <div class="d-flex justify-content-center w-100">
                 <div class="w-50" style="max-width: 1000px">
@@ -477,7 +482,7 @@
     <!--Desktop value-->
 
     <!--Mobile map-->
-    <section class="bg-star d-block d-lg-none mobile-map mt-5">
+    <section class="d-block d-lg-none mobile-map mt-5 bg-star">
         <div class="container">
             <img src="images/map-mobile.png"/>
         </div>
@@ -493,7 +498,7 @@
     <!--Mobile map-->
 
     <!--Desktop map-->
-    <section class="bg-star d-none d-lg-block desktop-map">
+    <section class="d-none d-lg-block desktop-map bg-star">
         <div class="container">
             <img src="images/map-desktop.svg"/>
 
@@ -508,7 +513,7 @@
     <!--Desktop map-->
 
     <!--Mobile activity-->
-    <section id="mobile-activity" class="bg-star d-block d-lg-none mobile-activity py-5">
+    <section id="mobile-activity" class="d-block d-lg-none mobile-activity py-5 bg-star">
         <div class="container">
             <div class="mobile-activity-item">
                 <h3 class="text-white text-center batman-font">KIẾN THỨC</h3>
@@ -559,7 +564,7 @@
     <!--Mobile activity-->
 
     <!--Desktop activity-->
-    <section id="desktop-activity" class="bg-star d-none d-lg-block desktop-activity">
+    <section id="desktop-activity" class="d-none d-lg-block desktop-activity bg-star">
         <div class="container">
             <div class="d-flex flex-wrap justify-content-center desktop-activity-list">
                 <div class="desktop-activity-item">
@@ -613,7 +618,7 @@
     <!--Desktop activity-->
 
     <!--Mobile journey-->
-    <section class="bg-star d-block d-lg-none mobile-journey mt-5 pt-5">
+    <section class="d-block d-lg-none mobile-journey mt-5 pt-5">
         <div class="container">
             <div class="position-relative">
                 <div class="mobile-journey-left">
@@ -621,7 +626,7 @@
                         <img src="images/journey.png"/>
                     </div>
                     <div class="register-button mt-4">
-                        <a href="#mobile-register-form">
+                        <a href="#mobile-register-form" class="smooth-scroll">
                             <img src="images/register.png">
                         </a>
                     </div>
@@ -641,7 +646,7 @@
                         <img src="images/journey.png"/>
                     </div>
                     <div class="register-button mt-4">
-                        <a href="#desktop-register-form">
+                        <a href="#desktop-register-form" class="smooth-scroll">
                             <img src="images/register.png">
                         </a>
                     </div>
@@ -704,7 +709,7 @@
     <!--Mobile class info-->
 
     <!--Desktop class info-->
-    <section id="desktop-class-info" class="bg-star d-none d-lg-block desktop-class-info">
+    <section id="desktop-class-info" class="d-none d-lg-block desktop-class-info">
         <div class="container">
             <div class="d-flex justify-content-center w-100">
                 <div class="w-50" style="max-width: 1000px">
@@ -852,7 +857,7 @@
     <!--Mobile promotion-->
 
     <!--Desktop promotion-->
-    <section id="desktop-promotion" class="bg-star d-none d-lg-block desktop-promotion pb-5">
+    <section id="desktop-promotion" class="d-none d-lg-block desktop-promotion pb-5">
         <div class="container">
             <div class="d-flex justify-content-center align-items-center w-100">
                 <div class="w-50" style="max-width: 800px">
@@ -876,7 +881,7 @@
 
             <div class="d-flex w-100 justify-content-center mt-4">
                 <div class="register-button">
-                    <a href="#desktop-register-form">
+                    <a href="#desktop-register-form" class="smooth-scroll">
                         <img src="images/register.png">
                     </a>
                 </div>
@@ -892,7 +897,7 @@
         <div class="row">
             <div class="col-12 col-lg-6 mt-5">
                 <div class="w-50 mb-4">
-                    <a href="#">
+                    <a href="#top" class="smooth-scroll">
                         <img src="images/sort-logo.png">
                     </a>
                 </div>

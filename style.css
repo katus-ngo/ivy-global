@@ -5,6 +5,10 @@
     src: url("fonts/batman.otf");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Montserrat', sans-serif;
     padding: 0;
@@ -109,8 +113,12 @@ section.desktop-overview {
     padding-top: 150px;
 }
 
+.bg-star {
+    position: relative;
+}
+
 .bg-star:after {
-    /*content: "";*/
+    content: "";
     background-image: url("images/star-bg.png");
     background-repeat: repeat;
     background-size: contain;
@@ -278,6 +286,21 @@ section.footer p.footer-message {
     line-height: 30px;
 }
 
+div.menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: all ease-in-out 200ms;
+}
+
+div.menu.sticky {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    background-color: #1f1e57;
+    z-index: 1000;
+}
+
 
 @media only screen and (min-width: 576px) {
 
@@ -320,6 +343,11 @@ section.footer p.footer-message {
 
 /*Desktop screen >= 992*/
 @media only screen and (min-width: 992px) {
+
+    div.menu {
+        top: 0;
+    }
+
     section.desktop-top {
         width: 100%;
     }
@@ -330,11 +358,6 @@ section.footer p.footer-message {
 
     section.desktop-top nav.navbar a.navbar-brand img.desktop-logo {
         width: 200px;
-    }
-
-    section.desktop-top nav.navbar {
-        position: absolute;
-        top: 20px;
     }
 
     section.desktop-top nav.navbar a.nav-link:hover {
@@ -504,10 +527,6 @@ section.footer p.footer-message {
     section.desktop-journey div.desktop-journey-milky-way-image {
         width: 80%;
         float: right;
-    }
-
-    section.desktop-class-info {
-        background: linear-gradient(148.74deg, #0071BB 13.32%, rgba(27, 20, 100, 0) 74.05%);
     }
 
     section.desktop-class-info div.desktop-class-info-list {
