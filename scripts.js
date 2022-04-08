@@ -236,7 +236,7 @@ const handlePlayVideo = debounce(() => {
 
 window.onscroll = function () {
     handleStickyMenu();
-    handlePlayVideo();
+    // handlePlayVideo();
 
 };
 
