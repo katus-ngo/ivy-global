@@ -277,7 +277,9 @@ section.footer {
 }
 
 section.footer p.footer-message {
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
 }
 
 div.menu {
@@ -534,10 +536,6 @@ div.menu.sticky {
     section.desktop-class-info div.desktop-class-info-list div.desktop-class-info-item {
         width: 30%;
     }
-
-    /*section.desktop-class-info div.desktop-class-info-list div.desktop-class-info-item img {*/
-    /*    max-width: 30%;*/
-    /*}*/
 
     section.desktop-class-info div.desktop-class-info-list div.desktop-class-info-item p {
         font-size: 12px;
