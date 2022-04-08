@@ -535,9 +535,9 @@ div.menu.sticky {
         width: 30%;
     }
 
-    section.desktop-class-info div.desktop-class-info-list div.desktop-class-info-item img {
-        max-width: 30%;
-    }
+    /*section.desktop-class-info div.desktop-class-info-list div.desktop-class-info-item img {*/
+    /*    max-width: 30%;*/
+    /*}*/
 
     section.desktop-class-info div.desktop-class-info-list div.desktop-class-info-item p {
         font-size: 12px;
